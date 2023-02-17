@@ -1,0 +1,52 @@
+Step 1 :
+
+   To access the Python library we will install it.
+
+   Command : pip install requests
+
+
+Step 2 :
+
+   Now we will import the package into our python script.
+
+   Command : import requests
+
+
+   By doing so we have imported the library using the command import requests.
+
+
+Step 3 :
+
+  city = input('input the city name')     -----------> Take the input from the user for the city he wish to forecast the weather.
+  print(city)
+
+  print('Displaying Weather report for: ' + city)
+
+
+Step 4 :
+
+
+  Now ww will define a URL,make use of format to pass city as a parameter here.
+
+  url = 'https://wttr.in/{}'.format(city)
+
+Step 5 :
+
+  res = requests.get(url)    ------> here will make use of our requests module
+
+Step 6 :
+
+  Our resultant data is stored in res. So we will make use of the text method to extract the weather details.
+
+  print(res.text)
+
+
+
+
+
+
+
+
+
+
+
